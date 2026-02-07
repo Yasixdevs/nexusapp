@@ -1,5 +1,5 @@
 # Node
-app/node_modules/
+node_modules/
 
 # Electron
 dist/
