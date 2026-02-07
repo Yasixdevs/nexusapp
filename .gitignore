@@ -1,0 +1,9 @@
+# Node
+app/node_modules/
+
+# Electron
+dist/
+out/
+
+# Logs
+*.log
