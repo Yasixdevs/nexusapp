@@ -4,12 +4,19 @@ async function Informationglobal()
 {
 const cpu = await si.cpu();
 const osInfo = await si.osInfo();
-console.log(cpu);
-console.log(osInfo);
+const cpuLoad = await si.currentLoad();
 return {
     cpuname: cpu.brand,
     cpucores: cpu.cores,
     cpusocket: cpu.socket,
-    cpuLoad: await si.currentLoad
+    cpuLoad: cpuLoad.currentLoad
 }
 }
+
+async function CpuLoad() {
+    const cpuLoad = await si.currentLoad();
+    return {
+        cpuLoad : cpuLoad
+    }
+}
+module.exports = { Informationglobal, CpuLoad };
