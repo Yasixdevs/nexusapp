@@ -19,4 +19,5 @@ async function CpuLoad() {
         cpuLoad : cpuLoad
     }
 }
+
 module.exports = { Informationglobal, CpuLoad };
